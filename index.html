@@ -9,6 +9,116 @@
     <title>فروشگاه موسیقی</title>
     <link rel="icon" href="img/core-img/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Vazir:400,500,700&display=swap");
+        body {
+            font-family: 'Vazir', 'Arial', sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .header-area .classynav ul li a {
+            text-align: right;
+        }
+        
+        .footer-nav ul {
+            justify-content: flex-end;
+        }
+        
+        .footer-nav ul li {
+            margin-left: 15px;
+            margin-right: 0;
+        }
+        
+        .footer-nav ul li a {
+            text-align: right;
+        }
+        /* Styles for the search box */
+        
+        .search-box {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 30px;
+            padding: 5px 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .search-box input {
+            border: none;
+            outline: none;
+            background: none;
+            padding: 10px;
+            border-radius: 30px;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .search-box button {
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .search-box button:hover {
+            color: #000;
+        }
+        /* Styles for the product area */
+        
+        .product-thumb img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .product-info h5 {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        
+        .product-info p {
+            color: #999;
+        }
+        
+        .product-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .product-actions a,
+        .product-actions button {
+            background-color: #f1c40f;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .product-actions a:hover,
+        .product-actions button:hover {
+            background-color: #e2b607;
+        }
+        
+        .product-actions .details-btn {
+            background-color: #3498db;
+        }
+        
+        .product-actions .details-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 
 <body dir="rtl">
@@ -43,11 +153,11 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">خانه</a></li>
-                                    <li><a href="products.html">محصولات</a>
+                                    <li><a href="">محصولات</a>
                                         <ul class="dropdown">
-                                            <li><a href="category1.html">دسته‌بندی ۱</a></li>
-                                            <li><a href="category2.html">دسته‌بندی ۲</a></li>
-                                            <li><a href="category3.html">دسته‌بندی ۳</a></li>
+                                            <li><a href="categoryg.html">گیتار</a></li>
+                                            <li><a href="categoryk.html">سازهای کوبه‌ای</a></li>
+                                            <li><a href="categoryp.html">پیانو</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="albums-store.html">آلبوم‌ها</a></li>
@@ -61,6 +171,12 @@
 
                         <!-- Nav brand -->
                         <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt="لوگو"></a>
+
+                        <!-- Search Box -->
+                        <div class="search-box">
+                            <input type="text" placeholder="جستجو...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
 
                         <!-- Login/Register & Cart Button -->
                         <div class="login-register-cart-button d-flex align-items-center">
@@ -89,8 +205,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="hero-slides-content text-center">
-                            <h6 data-animation="fadeInUp" data-delay="100ms">جدیدترین آلبوم</h6>
-                            <h2 data-animation="fadeInUp" data-delay="300ms">فراتر از زمان <span>فراتر از زمان</span></h2>
+                            <h6 data-animation="fadeInUp" data-delay="300ms">جدیدترین محصولات</h6>
+                            <h2 data-animation="fadeInUp" data-delay="300ms">فراتر از انتظار <span>فراتر از زمان</span></h2>
                             <a data-animation="fadeInUp" data-delay="500ms" href="#" class="btn oneMusic-btn mt-50">کشف کنید<i class="fa fa-angle-double-right"></i></a>
                         </div>
                     </div>
@@ -107,14 +223,15 @@
                 <div class="col-12">
                     <div class="section-heading style-2">
                         <p>جدیدترین‌ها</p>
-                        <h2>آخرین آلبوم‌ها</h2>
+                        <h2>فروشگاه</h2>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-9">
                     <div class="ablums-text text-center mb-70">
-                        <p>نام تراستیج اکس ول ماگنا تِینسیدنت، اوت پورتا نیسل فینیبوس. ویواموس او دولور او کوام واریوس روت‌رام. فوس‌سه نک جاستو آید سم آلیکام فریگیلا نک نون لاکوس. سوسپندیسه [...].</p>
+                        <p>محصولات با کیفیت در اولویت است
+                            <p>
                     </div>
                 </div>
             </div>
@@ -211,8 +328,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading style-2">
-                        <p>جدیدترین محصولات</p>
-                        <h2>خرید جدیدترین‌ها</h2>
+                        <p>جدیدترین سازها</p>
+                        <h2>خرید ساز</h2>
                     </div>
                 </div>
             </div>
@@ -222,21 +339,17 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                     <div class="single-product-area wow fadeInUp" data-wow-delay="100ms">
                         <div class="product-thumb">
-                            <img src="img/bg-img/b1.jpg" alt="" class="product-image">
-                            <!-- Product Price -->
-                            <div class="product-price">
-                                <p>$0.90</p>
-                            </div>
-                            <!-- Play Icon -->
-                            <div class="play-icon">
-                                <a href="#" class="video--play--btn"><span class="icon-play-button"></span></a>
-                            </div>
+                            <img src="img/music-store-img/guitar2.jpg" alt="گیتار الکتریک سفید" class="product-image">
                         </div>
                         <div class="product-info">
                             <a href="#">
-                                <h5>گروه گاراژ</h5>
+                                <h5>گیتار الکتریک مشکی</h5>
                             </a>
-                            <p>ایستگاه رادیویی</p>
+                            <p>گیتار الکتریک</p>
+                        </div>
+                        <div class="product-actions">
+                            <button>افزودن به سبد خرید</button>
+                            <a href="#" class="details-btn">جزئیات</a>
                         </div>
                     </div>
                 </div>
@@ -245,13 +358,17 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                     <div class="single-product-area wow fadeInUp" data-wow-delay="200ms">
                         <div class="product-thumb">
-                            <img src="img/bg-img/b2.jpg" alt="" class="product-image">
+                            <img src="img/music-store-img/guitar2.jpg" alt="گیتار الکتریک سفید" class="product-image">
                         </div>
                         <div class="product-info">
                             <a href="#">
-                                <h5>نویزها</h5>
+                                <h5>گیتار الکتریک سفید</h5>
                             </a>
-                            <p>آدامس بادکنکی</p>
+                            <p>گیتار الکتریک</p>
+                        </div>
+                        <div class="product-actions">
+                            <button>افزودن به سبد خرید</button>
+                            <a href="#" class="details-btn">جزئیات</a>
                         </div>
                     </div>
                 </div>
@@ -260,66 +377,74 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                     <div class="single-product-area wow fadeInUp" data-wow-delay="300ms">
                         <div class="product-thumb">
-                            <img src="img/bg-img/b3.jpg" alt="" class="product-image">
+                            <img src="img/music-store-img/guitar2.jpg" alt="گیتار الکتریک سفید class=" product-image ">
                         </div>
-                        <div class="product-info">
-                            <a href="#">
-                                <h5>جس پارکر</h5>
+                        <div class="product-info ">
+                            <a href="# ">
+                                <h5>پیانو</h5>
                             </a>
-                            <p>آلبوم</p>
+                            <p>پیانو دیجیتال</p>
+                        </div>
+                        <div class="product-actions ">
+                            <button>افزودن به سبد خرید</button>
+                            <a href="# " class="details-btn ">جزئیات</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Single Product Area -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-product-area wow fadeInUp" data-wow-delay="400ms">
-                        <div class="product-thumb">
-                            <img src="img/bg-img/b4.jpg" alt="" class="product-image">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 ">
+                    <div class="single-product-area wow fadeInUp " data-wow-delay="400ms ">
+                        <div class="product-thumb ">
+                            <img src="img/music-store-img/guitar2.jpg " alt="گیتار الکتریک سفید " class="product-image ">
                         </div>
-                        <div class="product-info">
-                            <a href="#">
-                                <h5>نویزها</h5>
+                        <div class="product-info ">
+                            <a href="# ">
+                                <h5>ساز کوبه‌ای</h5>
                             </a>
-                            <p>آدامس بادکنکی</p>
+                            <p>ساز کوبه‌ای حرفه‌ای</p>
+                        </div>
+                        <div class="product-actions ">
+                            <button>افزودن به سبد خرید</button>
+                            <a href="# " class="details-btn ">جزئیات</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Single Product Area -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-product-area wow fadeInUp" data-wow-delay="500ms">
-                        <div class="product-thumb">
-                            <img src="img/bg-img/b1.jpg" alt="" class="product-image">
-                            <!-- Product Price -->
-                            <div class="product-price">
-                                <p>$0.90</p>
-                            </div>
-                            <!-- Play Icon -->
-                            <div class="play-icon">
-                                <a href="#" class="video--play--btn"><span class="icon-play-button"></span></a>
-                            </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 ">
+                    <div class="single-product-area wow fadeInUp " data-wow-delay="500ms ">
+                        <div class="product-thumb ">
+                            <img src="img/music-store-img/guitar2.jpg " alt="گیتار الکتریک سفید " class="product-image ">
                         </div>
-                        <div class="product-info">
-                            <a href="#">
-                                <h5>گروه گاراژ</h5>
+                        <div class="product-info ">
+                            <a href="# ">
+                                <h5>گیتار الکتریک</h5>
                             </a>
-                            <p>ایستگاه رادیویی</p>
+                            <p>با کیفیت بالا</p>
+                        </div>
+                        <div class="product-actions ">
+                            <button>افزودن به سبد خرید</button>
+                            <a href="# " class="details-btn ">جزئیات</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Single Product Area -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="single-product-area wow fadeInUp" data-wow-delay="600ms">
-                        <div class="product-thumb">
-                            <img src="img/bg-img/b2.jpg" alt="" class="product-image">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2 ">
+                    <div class="single-product-area wow fadeInUp " data-wow-delay="600ms ">
+                        <div class="product-thumb ">
+                            <img src="img/music-store-img/guitar2.jpg " alt="گیتار الکتریک سفیدclass="product-image ">
                         </div>
-                        <div class="product-info">
-                            <a href="#">
-                                <h5>نویزها</h5>
+                        <div class="product-info ">
+                            <a href="# ">
+                                <h5>گیتار الکتریک</h5>
                             </a>
-                            <p>آدامس بادکنکی</p>
+                            <p>با کیفیت بالا</p>
+                        </div>
+                        <div class="product-actions ">
+                            <button>افزودن به سبد خرید</button>
+                            <a href="# " class="details-btn ">جزئیات</a>
                         </div>
                     </div>
                 </div>
@@ -327,7 +452,7 @@
 
             <div class="row">
                 <div class="col-12">
-                    <div class="load-more-btn text-center wow fadeInUp" data-wow-delay="300ms">
+                    <div class="load-more-btn text-center wow fadeInUp mt-5" data-wow-delay="300ms">
                         <a href="#" class="btn oneMusic-btn">بیشتر بارگذاری کنید<i class="fa fa-angle-double-right"></i></a>
                     </div>
                 </div>
@@ -337,31 +462,31 @@
     <!-- ##### Buy Now Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row d-flex flex-wrap align-items-center">
-                <div class="col-12 col-md-6">
-                    <a href="#"><img src="img/core-img/logo.png" alt="لوگو"></a>
-                    <p class="copywrite-text">
-                        <a href="#">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </a>
+    <footer class="footer-area ">
+        <div class="container ">
+            <div class="row d-flex flex-wrap align-items-center ">
+                <div class="col-12 col-md-6 ">
+                    <a href="# "><img src="img/core-img/logo.png " alt="لوگو "></a>
+                    <p class="copywrite-text ">
+                        <a href="# ">
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        Copyright &copy;
+                                        <script>
+                                            document.write(new Date().getFullYear());
+                                        </script> تمامی حقوق محفوظ میباشد
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </a>
                     </p>
                 </div>
 
-                <div class="col-12 col-md-6">
-                    <div class="footer-nav">
+                <div class="col-12 col-md-6 ">
+                    <div class="footer-nav ">
                         <ul>
-                            <li><a href="index.html">صفحه اصلی</a></li>
-                            <li><a href="albums-store.html">آلبوم‌ها</a></li>
-                            <li><a href="blog.html">اخبار</a></li>
-                            <li><a href="services.html">خدمات ما</a></li>
-                            <li><a href="contact.html">تماس با ما</a></li>
+                            <li><a href="index.html ">صفحه اصلی</a></li>
+                            <li><a href="albums-store.html ">آلبوم‌ها</a></li>
+                            <li><a href="blog.html ">اخبار</a></li>
+                            <li><a href="services.html ">خدمات ما</a></li>
+                            <li><a href="contact.html ">تماس با ما</a></li>
                         </ul>
                     </div>
                 </div>
@@ -372,15 +497,15 @@
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery/jquery-2.2.4.min.js "></script>
     <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/popper.min.js "></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js "></script>
     <!-- All Plugins js -->
-    <script src="js/plugins/plugins.js"></script>
+    <script src="js/plugins/plugins.js "></script>
     <!-- Active js -->
-    <script src="js/active.js"></script>
+    <script src="js/active.js "></script>
     <!-- Custom Audio Play on Hover -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {

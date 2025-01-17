@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
     <meta charset="UTF-8">
@@ -9,14 +9,38 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>One Music - Modern Music HTML5 Template</title>
+    <title>فروشگاه ساز</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Vazir:400,500,700&display=swap");
+        body {
+            font-family: 'Vazir', 'Arial', sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .header-area .classynav ul li a {
+            text-align: right;
+        }
+        
+        .footer-nav ul {
+            justify-content: flex-end;
+        }
+        
+        .footer-nav ul li {
+            margin-left: 15px;
+            margin-right: 0;
+        }
+        
+        .footer-nav ul li a {
+            text-align: right;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,16 +56,10 @@
 
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
-        <!-- Navbar Area -->
         <div class="oneMusic-main-menu">
             <div class="classy-nav-container breakpoint-off">
                 <div class="container">
-                    <!-- Menu -->
                     <nav class="classy-navbar justify-content-between" id="oneMusicNav">
-
-                        <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
-
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -49,8 +67,6 @@
 
                         <!-- Menu -->
                         <div class="classy-menu">
-
-                            <!-- Close Button -->
                             <div class="classycloseIcon">
                                 <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                             </div>
@@ -58,56 +74,36 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="albums-store.html">Albums</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a href="index.html">خانه</a></li>
+                                    <li><a href="">محصولات</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="albums-store.html">Albums</a></li>
-                                            <li><a href="event.html">Events</a></li>
-                                            <li><a href="blog.html">News</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="#">Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                    <li><a href="#">Even Dropdown</a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="categoryg.html">گیتار</a></li>
+                                            <li><a href="categoryk.html">سازهای کوبه‌ای</a></li>
+                                            <li><a href="category3.html">پیانو</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="event.html">Events</a></li>
-                                    <li><a href="blog.html">News</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="albums-store.html">آلبوم‌ها</a></li>
+                                    <li><a href="blog.html">اخبار</a></li>
+                                    <li><a href="services.html">خدمات ما</a></li>
+                                    <li><a href="contact.html">تماس با ما</a></li>
                                 </ul>
-
-                                <!-- Login/Register & Cart Button -->
-                                <div class="login-register-cart-button d-flex align-items-center">
-                                    <!-- Login/Register -->
-                                    <div class="login-register-btn mr-50">
-                                        <a href="login.html" id="loginBtn">Login / Register</a>
-                                    </div>
-
-                                    <!-- Cart Button -->
-                                    <div class="cart-btn">
-                                        <p><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
-                                    </div>
-                                </div>
                             </div>
                             <!-- Nav End -->
+                        </div>
 
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt="لوگو"></a>
+                        <!-- Login/Register & Cart Button -->
+                        <div class="login-register-cart-button d-flex align-items-center">
+                            <!-- Login/Register -->
+                            <div class="login-register-btn mr-50">
+                                <a href="login.html" id="loginBtn">ورود / ثبت نام</a>
+                            </div>
+
+                            <!-- Cart Button -->
+                            <div class="cart-btn">
+                                <p><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
+                            </div>
                         </div>
                     </nav>
                 </div>
@@ -119,8 +115,8 @@
     <!-- ##### Breadcumb Area Start ##### -->
     <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb3.jpg);">
         <div class="bradcumbContent">
-            <p>See what’s new</p>
-            <h2>News</h2>
+            <p>جدیدترین‌ها را ببینید</p>
+            <h2>اخبار</h2>
         </div>
     </section>
     <!-- ##### Breadcumb Area End ##### -->
@@ -138,23 +134,23 @@
                             <a href="#"><img src="img/bg-img/blog1.jpg" alt=""></a>
                             <!-- Post Date -->
                             <div class="post-date">
-                                <span>15</span>
-                                <span>June ‘18</span>
+                                <span>۱۵</span>
+                                <span>خرداد</span>
                             </div>
                         </div>
 
                         <!-- Blog Content -->
                         <div class="blog-content">
                             <!-- Post Title -->
-                            <a href="#" class="post-title">5 Festivals you shouldn’t miss this summer</a>
+                            <a href="#" class="post-title">۵ جشنواره‌ای که نباید این تابستان از دست بدهید</a>
                             <!-- Post Meta -->
                             <div class="post-meta d-flex mb-30">
-                                <p class="post-author">By<a href="#"> Admin</a></p>
-                                <p class="tags">in<a href="#"> Events</a></p>
-                                <p class="tags"><a href="#">2 Comments</a></p>
+                                <p class="post-author">توسط<a href="#"> مدیر</a></p>
+                                <p class="tags">در<a href="#"> رویدادها</a></p>
+                                <p class="tags"><a href="#">۲ دیدگاه</a></p>
                             </div>
                             <!-- Post Excerpt -->
-                            <p>Pellentesque sit amet velit a libero viverra porta non eu justo. Vivamus mollis metus sem, ac sodales dui lobortis. Pellentesque sit amet velit a libero viverra porta non eu justo. Vivamus mollis metus sem, ac sodales dui lobortis.</p>
+                            <p>توضیحات تکمیلی , با خرید بلیط و آمدن به این رویداد روز خوبی را برای خود و دوستان به ارمغان بیاورید.</p>
                         </div>
                     </div>
 
@@ -162,26 +158,26 @@
                     <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
                         <!-- Post Thumb -->
                         <div class="blog-post-thumb mt-30">
-                            <a href="#"><img src="img/bg-img/blog2.jpg" alt=""></a>
+                            <a href="#"><img src="img/music-store-img/OIP.jpg" alt=""></a>
                             <!-- Post Date -->
                             <div class="post-date">
-                                <span>15</span>
-                                <span>June ‘18</span>
+                                <span>20</span>
+                                <span>فروردین</span>
                             </div>
                         </div>
 
                         <!-- Blog Content -->
                         <div class="blog-content">
                             <!-- Post Title -->
-                            <a href="#" class="post-title">5 Festivals you shouldn’t miss this summer</a>
+                            <a href="#" class="post-title">تخفیف بینظیر گیتارهای آکوستیک %30</a>
                             <!-- Post Meta -->
                             <div class="post-meta d-flex mb-30">
-                                <p class="post-author">By<a href="#"> Admin</a></p>
-                                <p class="tags">in<a href="#"> Events</a></p>
-                                <p class="tags"><a href="#">2 Comments</a></p>
+                                <p class="post-author">توسط<a href="#"> مدیر</a></p>
+                                <p class="tags">در<a href="#"> رویدادها</a></p>
+                                <p class="tags"><a href="#">۲ دیدگاه</a></p>
                             </div>
                             <!-- Post Excerpt -->
-                            <p>Pellentesque sit amet velit a libero viverra porta non eu justo. Vivamus mollis metus sem, ac sodales dui lobortis. Pellentesque sit amet velit a libero viverra porta non eu justo. Vivamus mollis metus sem, ac sodales dui lobortis.</p>
+                            <p>توضیحات تکمیلی , تخفیف تا آخر ماه هرچه سریعتر اقدام کنید.</p>
                         </div>
                     </div>
 
@@ -192,23 +188,23 @@
                             <a href="#"><img src="img/bg-img/blog3.jpg" alt=""></a>
                             <!-- Post Date -->
                             <div class="post-date">
-                                <span>15</span>
-                                <span>June ‘18</span>
+                                <span>24</span>
+                                <span>اسفند</span>
                             </div>
                         </div>
 
                         <!-- Blog Content -->
                         <div class="blog-content">
                             <!-- Post Title -->
-                            <a href="#" class="post-title">5 Festivals you shouldn’t miss this summer</a>
+                            <a href="#" class="post-title">۵ جشنواره‌ای که نباید این تابستان از دست بدهید</a>
                             <!-- Post Meta -->
                             <div class="post-meta d-flex mb-30">
-                                <p class="post-author">By<a href="#"> Admin</a></p>
-                                <p class="tags">in<a href="#"> Events</a></p>
-                                <p class="tags"><a href="#">2 Comments</a></p>
+                                <p class="post-author">توسط<a href="#"> مدیر</a></p>
+                                <p class="tags">در<a href="#"> رویدادها</a></p>
+                                <p class="tags"><a href="#">۲ دیدگاه</a></p>
                             </div>
                             <!-- Post Excerpt -->
-                            <p>Pellentesque sit amet velit a libero viverra porta non eu justo. Vivamus mollis metus sem, ac sodales dui lobortis. Pellentesque sit amet velit a libero viverra porta non eu justo. Vivamus mollis metus sem, ac sodales dui lobortis.</p>
+                            <p>توضیحات تکمیلی , با خرید بلیط و آمدن به این رویداد روز خوبی را برای خود و دوستان به ارمغان بیاورید.</p>
                         </div>
                     </div>
 
@@ -216,9 +212,9 @@
                     <div class="oneMusic-pagination-area wow fadeInUp" data-wow-delay="300ms">
                         <nav>
                             <ul class="pagination">
-                                <li class="page-item active"><a class="page-link" href="#">01</a></li>
-                                <li class="page-item"><a class="page-link" href="#">02</a></li>
-                                <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">۰۱</a></li>
+                                <li class="page-item"><a class="page-link" href="#">۰۲</a></li>
+                                <li class="page-item"><a class="page-link" href="#">۰۳</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -230,15 +226,15 @@
                         <!-- Widget Area -->
                         <div class="single-widget-area mb-30">
                             <div class="widget-title">
-                                <h5>Categories</h5>
+                                <h5>دسته‌بندی‌ها</h5>
                             </div>
                             <div class="widget-content">
                                 <ul>
-                                    <li><a href="#">Music</a></li>
-                                    <li><a href="#">Events &amp; Press</a></li>
-                                    <li><a href="#">Festivals</a></li>
-                                    <li><a href="#">Lyfestyle</a></li>
-                                    <li><a href="#">Uncategorized</a></li>
+                                    <li><a href="#">موسیقی</a></li>
+                                    <li><a href="#">رویدادها و مطبوعات</a></li>
+                                    <li><a href="#">جشنواره‌ها</a></li>
+                                    <li><a href="#">سبک زندگی</a></li>
+                                    <li><a href="#">بدون دسته‌بندی</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -246,15 +242,15 @@
                         <!-- Widget Area -->
                         <div class="single-widget-area mb-30">
                             <div class="widget-title">
-                                <h5>Archive</h5>
+                                <h5>آرشیو</h5>
                             </div>
                             <div class="widget-content">
                                 <ul>
-                                    <li><a href="#">February 2018</a></li>
-                                    <li><a href="#">March 2018</a></li>
-                                    <li><a href="#">April 2018</a></li>
-                                    <li><a href="#">May 2018</a></li>
-                                    <li><a href="#">June 2018</a></li>
+                                    <li><a href="#">فوریه ۲۰۱۸</a></li>
+                                    <li><a href="#">مارس ۲۰۱۸</a></li>
+                                    <li><a href="#">آوریل ۲۰۱۸</a></li>
+                                    <li><a href="#">مه ۲۰۱۸</a></li>
+                                    <li><a href="#">ژوئن ۲۰۱۸</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -262,18 +258,18 @@
                         <!-- Widget Area -->
                         <div class="single-widget-area mb-30">
                             <div class="widget-title">
-                                <h5>Tags</h5>
+                                <h5>برچسب‌ها</h5>
                             </div>
                             <div class="widget-content">
                                 <ul class="tags">
-                                    <li><a href="#">music</a></li>
-                                    <li><a href="#">events</a></li>
-                                    <li><a href="#">artists</a></li>
-                                    <li><a href="#">press</a></li>
+                                    <li><a href="#">موسیقی</a></li>
+                                    <li><a href="#">رویدادها</a></li>
+                                    <li><a href="#">هنرمندان</a></li>
+                                    <li><a href="#">مطبوعات</a></li>
                                     <li><a href="#">mp3</a></li>
-                                    <li><a href="#">videos</a></li>
-                                    <li><a href="#">concerts</a></li>
-                                    <li><a href="#">performers</a></li>
+                                    <li><a href="#">ویدیوها</a></li>
+                                    <li><a href="#">کنسرت‌ها</a></li>
+                                    <li><a href="#">اجراها</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -301,8 +297,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading white">
-                        <p>See what’s new</p>
-                        <h2>Get In Touch</h2>
+                        <p>جدیدترین‌ها را ببینید</p>
+                        <h2>تماس با ما</h2>
                     </div>
                 </div>
             </div>
@@ -315,26 +311,26 @@
                             <div class="row">
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                        <input type="text" class="form-control" id="name" placeholder="نام">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                        <input type="email" class="form-control" id="email" placeholder="ایمیل">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" placeholder="موضوع">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="پیام"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                                    <button class="btn oneMusic-btn mt-30" type="submit">ارسال <i class="fa fa-angle-double-right"></i></button>
                                 </div>
                             </div>
                         </form>
@@ -351,19 +347,26 @@
             <div class="row d-flex flex-wrap align-items-center">
                 <div class="col-12 col-md-6">
                     <a href="#"><img src="img/core-img/logo.png" alt=""></a>
-                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    <p class="copywrite-text ">
+                        <a href="# ">
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        Copyright &copy;
+                                        <script>
+                                            document.write(new Date().getFullYear());
+                                        </script> تمامی حقوق محفوظ میباشد
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </a>
+                    </p>
                 </div>
 
                 <div class="col-12 col-md-6">
                     <div class="footer-nav">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Albums</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="index.html ">صفحه اصلی</a></li>
+                            <li><a href="albums-store.html ">آلبوم‌ها</a></li>
+                            <li><a href="blog.html ">اخبار</a></li>
+                            <li><a href="services.html ">خدمات ما</a></li>
+                            <li><a href="contact.html ">تماس با ما</a></li>
                         </ul>
                     </div>
                 </div>

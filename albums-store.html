@@ -1,25 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title -->
-    <title>One Music - Modern Music HTML5 Template</title>
-
-    <!-- Favicon -->
+    <title>فروشگاه موسیقی</title>
     <link rel="icon" href="img/core-img/favicon.ico">
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Vazir:400,500,700&display=swap");
+        body {
+            font-family: 'Vazir', 'Arial', sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+        
+        .header-area .classynav ul li a {
+            text-align: right;
+        }
+        
+        .footer-nav ul {
+            justify-content: flex-end;
+        }
+        
+        .footer-nav ul li {
+            margin-left: 15px;
+            margin-right: 0;
+        }
+        
+        .footer-nav ul li a {
+            text-align: right;
+        }
+        /* Styles for the search box */
+        
+        .search-box {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 30px;
+            padding: 5px 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .search-box input {
+            border: none;
+            outline: none;
+            background: none;
+            padding: 10px;
+            border-radius: 30px;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .search-box button {
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .search-box button:hover {
+            color: #000;
+        }
+        /* Styles for the product area */
+        
+        .product-thumb img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .product-info h5 {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        
+        .product-info p {
+            color: #999;
+        }
+        
+        .product-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .product-actions a,
+        .product-actions button {
+            background-color: #f1c40f;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .product-actions a:hover,
+        .product-actions button:hover {
+            background-color: #e2b607;
+        }
+        
+        .product-actions .details-btn {
+            background-color: #3498db;
+        }
+        
+        .product-actions .details-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 
-<body>
+<body dir="rtl">
     <!-- Preloader -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="lds-ellipsis">
@@ -31,17 +133,12 @@
     </div>
 
     <!-- ##### Header Area Start ##### -->
+    <!-- ##### Header Area Start ##### -->
     <header class="header-area">
-        <!-- Navbar Area -->
         <div class="oneMusic-main-menu">
             <div class="classy-nav-container breakpoint-off">
                 <div class="container">
-                    <!-- Menu -->
                     <nav class="classy-navbar justify-content-between" id="oneMusicNav">
-
-                        <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
-
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -49,8 +146,6 @@
 
                         <!-- Menu -->
                         <div class="classy-menu">
-
-                            <!-- Close Button -->
                             <div class="classycloseIcon">
                                 <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                             </div>
@@ -58,56 +153,43 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="albums-store.html">Albums</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a href="index.html">خانه</a></li>
+                                    <li><a href="">محصولات</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="albums-store.html">Albums</a></li>
-                                            <li><a href="event.html">Events</a></li>
-                                            <li><a href="blog.html">News</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="#">Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                    <li><a href="#">Even Dropdown</a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="categoryg.html">گیتار</a></li>
+                                            <li><a href="categoryk.html">سازهای کوبه‌ای</a></li>
+                                            <li><a href="categoryp.html">پیانو</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="event.html">Events</a></li>
-                                    <li><a href="blog.html">News</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="albums-store.html">آلبوم‌ها</a></li>
+                                    <li><a href="blog.html">اخبار</a></li>
+                                    <li><a href="services.html">خدمات ما</a></li>
+                                    <li><a href="contact.html">تماس با ما</a></li>
                                 </ul>
-
-                                <!-- Login/Register & Cart Button -->
-                                <div class="login-register-cart-button d-flex align-items-center">
-                                    <!-- Login/Register -->
-                                    <div class="login-register-btn mr-50">
-                                        <a href="login.html" id="loginBtn">Login / Register</a>
-                                    </div>
-
-                                    <!-- Cart Button -->
-                                    <div class="cart-btn">
-                                        <p><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
-                                    </div>
-                                </div>
                             </div>
                             <!-- Nav End -->
+                        </div>
 
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt="لوگو"></a>
+
+                        <!-- Search Box -->
+                        <div class="search-box">
+                            <input type="text" placeholder="جستجو...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+
+                        <!-- Login/Register & Cart Button -->
+                        <div class="login-register-cart-button d-flex align-items-center">
+                            <!-- Login/Register -->
+                            <div class="login-register-btn mr-50">
+                                <a href="login.html" id="loginBtn">ورود / ثبت نام</a>
+                            </div>
+
+                            <!-- Cart Button -->
+                            <div class="cart-btn">
+                                <p><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
+                            </div>
                         </div>
                     </nav>
                 </div>
@@ -119,8 +201,8 @@
     <!-- ##### Breadcumb Area Start ##### -->
     <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb3.jpg);">
         <div class="bradcumbContent">
-            <p>See what’s new</p>
-            <h2>Latest Albums</h2>
+            <p>جدیدترین‌ها را ببینید</p>
+            <h2>آخرین آلبوم‌ها</h2>
         </div>
     </section>
     <!-- ##### Breadcumb Area End ##### -->
@@ -131,8 +213,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="browse-by-catagories catagory-menu d-flex flex-wrap align-items-center mb-70">
-                        <a href="#" data-filter="*">Browse All</a>
-                        <a href="#" data-filter=".a" class="active">A</a>
+                        <a href="#" data-filter="*" class="active">همه</a>
+                        <a href="#" data-filter=".a">A</a>
                         <a href="#" data-filter=".b">B</a>
                         <a href="#" data-filter=".c">C</a>
                         <a href="#" data-filter=".d">D</a>
@@ -338,7 +420,7 @@
                             <img src="img/bg-img/b1.jpg" alt="">
                             <!-- Album Price -->
                             <div class="album-price">
-                                <p>$0.90</p>
+                                <p>120.000تومان</p>
                             </div>
                             <!-- Play Icon -->
                             <div class="play-icon">
@@ -347,9 +429,9 @@
                         </div>
                         <div class="album-info">
                             <a href="#">
-                                <h5>Garage Band</h5>
+                                <h5>مادها</h5>
                             </a>
-                            <p>Radio Station</p>
+                            <p>شب‌های تهران</p>
                         </div>
                     </div>
                 </div>
@@ -362,9 +444,9 @@
                         </div>
                         <div class="album-info">
                             <a href="#">
-                                <h5>Noises</h5>
+                                <h5>دارکوب</h5>
                             </a>
-                            <p>Buble Gum</p>
+                            <p>شب‌های تهران</p>
                         </div>
                     </div>
                 </div>
@@ -377,9 +459,9 @@
                         </div>
                         <div class="album-info">
                             <a href="#">
-                                <h5>Jess Parker</h5>
+                                <h5>آریان</h5>
                             </a>
-                            <p>The Album</p>
+                            <p>دل دیوانه</p>
                         </div>
                     </div>
                 </div>
@@ -392,9 +474,9 @@
                         </div>
                         <div class="album-info">
                             <a href="#">
-                                <h5>Noises</h5>
+                                <h5>چارتار</h5>
                             </a>
-                            <p>Buble Gum</p>
+                            <p>روزهای سرد</p>
                         </div>
                     </div>
                 </div>
@@ -404,7 +486,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="load-more-btn text-center">
-                        <a href="#" class="btn oneMusic-btn">Load More <i class="fa fa-angle-double-right"></i></a>
+                        <a href="#" class="btn oneMusic-btn">بیشتر بارگذاری کنید <i class="fa fa-angle-double-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -439,7 +521,7 @@
                         </div>
                         <div class="song-play-area">
                             <div class="song-name">
-                                <p>01. Main Hit Song</p>
+                                <p>01. آهنگ اصلی</p>
                             </div>
                             <audio preload="auto" controls>
                                 <source src="audio/dummy-audio.mp3">
@@ -456,7 +538,7 @@
                         </div>
                         <div class="song-play-area">
                             <div class="song-name">
-                                <p>01. Main Hit Song</p>
+                                <p>02. آهنگ اصلی</p>
                             </div>
                             <audio preload="auto" controls>
                                 <source src="audio/dummy-audio.mp3">
@@ -473,7 +555,7 @@
                         </div>
                         <div class="song-play-area">
                             <div class="song-name">
-                                <p>01. Main Hit Song</p>
+                                <p>03. آهنگ اصلی</p>
                             </div>
                             <audio preload="auto" controls>
                                 <source src="audio/dummy-audio.mp3">
@@ -490,7 +572,7 @@
                         </div>
                         <div class="song-play-area">
                             <div class="song-name">
-                                <p>01. Main Hit Song</p>
+                                <p>04. آهنگ اصلی</p>
                             </div>
                             <audio preload="auto" controls>
                                 <source src="audio/dummy-audio.mp3">
@@ -510,8 +592,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading white">
-                        <p>See what’s new</p>
-                        <h2>Get In Touch</h2>
+                        <p>جدیدترین‌ها را ببینید</p>
+                        <h2>تماس با ما</h2>
                     </div>
                 </div>
             </div>
@@ -524,26 +606,26 @@
                             <div class="row">
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                        <input type="text" class="form-control" id="name" placeholder="نام">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                        <input type="email" class="form-control" id="email" placeholder="ایمیل">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" placeholder="موضوع">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="پیام"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                                    <button class="btn oneMusic-btn mt-30" type="submit">ارسال <i class="fa fa-angle-double-right"></i></button>
                                 </div>
                             </div>
                         </form>
@@ -559,38 +641,40 @@
         <div class="container">
             <div class="row d-flex flex-wrap align-items-center">
                 <div class="col-12 col-md-6">
-                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
-                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    <a href="#"><img src="img/core-img/logo.png" alt="لوگو"></a>
+                    <p class="copywrite-text">
+                        <a href="#">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> تمامی حقوق محفوظ می‌باشد
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </a>
+                    </p>
                 </div>
 
                 <div class="col-12 col-md-6">
                     <div class="footer-nav">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Albums</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="index.html ">صفحه اصلی</a></li>
+                            <li><a href="albums-store.html ">آلبوم‌ها</a></li>
+                            <li><a href="blog.html ">اخبار</a></li>
+                            <li><a href="services.html ">خدمات ما</a></li>
+                            <li><a href="contact.html ">تماس با ما</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- ##### Footer Area Start ##### -->
+    <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->
-    <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
     <script src="js/bootstrap/popper.min.js"></script>
-    <!-- Bootstrap js -->
     <script src="js/bootstrap/bootstrap.min.js"></script>
-    <!-- All Plugins js -->
     <script src="js/plugins/plugins.js"></script>
-    <!-- Active js -->
     <script src="js/active.js"></script>
 </body>
 

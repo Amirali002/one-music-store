@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>One Music - Modern Music HTML5 Template</title>
+    <title>وان موزیک - قالب HTML5 موسیقی مدرن</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -17,6 +17,79 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        body {
+            direction: rtl;
+            text-align: right;
+            font-family: 'Vazir', sans-serif;
+        }
+        
+        .classynav ul li {
+            text-align: right;
+        }
+        
+        .classynav ul li ul li {
+            text-align: right;
+        }
+        
+        .classynav ul li ul li ul li {
+            text-align: right;
+        }
+        
+        .login-register-cart-button {
+            direction: ltr;
+        }
+        
+        .search-box {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 30px;
+            padding: 5px 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .search-box input {
+            border: none;
+            outline: none;
+            background: none;
+            padding: 10px;
+            border-radius: 30px;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .search-box button {
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .search-box button:hover {
+            color: #000;
+        }
+        
+        .footer-nav ul {
+            justify-content: flex-end;
+        }
+        
+        .footer-nav ul li {
+            margin-left: 15px;
+            margin-right: 0;
+        }
+        
+        .footer-nav ul li a {
+            text-align: right;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,16 +105,10 @@
 
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
-        <!-- Navbar Area -->
         <div class="oneMusic-main-menu">
             <div class="classy-nav-container breakpoint-off">
                 <div class="container">
-                    <!-- Menu -->
                     <nav class="classy-navbar justify-content-between" id="oneMusicNav">
-
-                        <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
-
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -49,8 +116,6 @@
 
                         <!-- Menu -->
                         <div class="classy-menu">
-
-                            <!-- Close Button -->
                             <div class="classycloseIcon">
                                 <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                             </div>
@@ -58,56 +123,43 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="albums-store.html">Albums</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a href="index.html">خانه</a></li>
+                                    <li><a href="">محصولات</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="albums-store.html">Albums</a></li>
-                                            <li><a href="event.html">Events</a></li>
-                                            <li><a href="blog.html">News</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="#">Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                    <li><a href="#">Even Dropdown</a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                            <li><a href="#">Deeply Dropdown</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">Even Dropdown</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="categoryg.html">گیتار</a></li>
+                                            <li><a href="categoryk.html">سازهای کوبه‌ای</a></li>
+                                            <li><a href="categoryp.html">پیانو</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="event.html">Events</a></li>
-                                    <li><a href="blog.html">News</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="albums-store.html">آلبوم‌ها</a></li>
+                                    <li><a href="blog.html">اخبار</a></li>
+                                    <li><a href="services.html">خدمات ما</a></li>
+                                    <li><a href="contact.html">تماس با ما</a></li>
                                 </ul>
-
-                                <!-- Login/Register & Cart Button -->
-                                <div class="login-register-cart-button d-flex align-items-center">
-                                    <!-- Login/Register -->
-                                    <div class="login-register-btn mr-50">
-                                        <a href="login.html" id="loginBtn">Login / Register</a>
-                                    </div>
-
-                                    <!-- Cart Button -->
-                                    <div class="cart-btn">
-                                        <p><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
-                                    </div>
-                                </div>
                             </div>
                             <!-- Nav End -->
+                        </div>
 
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt="لوگو"></a>
+
+                        <!-- Search Box -->
+                        <div class="search-box">
+                            <input type="text" placeholder="جستجو...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+
+                        <!-- Login/Register & Cart Button -->
+                        <div class="login-register-cart-button d-flex align-items-center">
+                            <!-- Login/Register -->
+                            <div class="login-register-btn mr-50">
+                                <a href="login.html" id="loginBtn">ورود / ثبت نام</a>
+                            </div>
+
+                            <!-- Cart Button -->
+                            <div class="cart-btn">
+                                <p><span class="icon-shopping-cart"></span> <span class="quantity">1</span></p>
+                            </div>
                         </div>
                     </nav>
                 </div>
@@ -117,10 +169,10 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
-    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb3.jpg);">
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/music-store-img/R.jfif);">
         <div class="bradcumbContent">
-            <p>See what’s new</p>
-            <h2>Events</h2>
+            <p>ببینید چه چیزهایی جدید است</p>
+            <h2>محصولات متنوعی از ساز های کوبه‌ای</h2>
         </div>
     </section>
     <!-- ##### Breadcumb Area End ##### -->
@@ -134,15 +186,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="img/bg-img/e1.jpg" alt="">
+                            <img src="img/music-store-img/tempo-darbuka-instrument.webp" alt="">
                         </div>
                         <div class="event-text">
-                            <h4>Dj Night Party</h4>
+                            <h4>Squier Mini Strat</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">VIP Sala</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">۱۷,۸۵۰,۰۰۰ تومان</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
+                            <a href="#" class="btn see-more-btn">دیدن محصول</a>
                         </div>
                     </div>
                 </div>
@@ -151,15 +202,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="img/bg-img/e2.jpg" alt="">
+                            <img src="img/music-store-img/tempo-darbuka-instrument.webp" alt="">
                         </div>
                         <div class="event-text">
-                            <h4>The Mission</h4>
+                            <h4>Squier Mini Strat</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">Gold Arena</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">۱۷,۸۵۰,۰۰۰ تومان</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
+                            <a href="#" class="btn see-more-btn">دیدن محصول</a>
                         </div>
                     </div>
                 </div>
@@ -168,15 +218,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="img/bg-img/e3.jpg" alt="">
+                            <img src="img/music-store-img/tempo-darbuka-instrument.webp" alt="">
                         </div>
                         <div class="event-text">
-                            <h4>Planet ibiza</h4>
+                            <h4>Squier Mini Strat</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">Space Ibiza</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">۱۷,۸۵۰,۰۰۰ تومان</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
+                            <a href="#" class="btn see-more-btn">دیدن محصول</a>
                         </div>
                     </div>
                 </div>
@@ -185,15 +234,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="img/bg-img/e4.jpg" alt="">
+                            <img src="img/music-store-img/tempo-darbuka-instrument.webp" alt="">
                         </div>
                         <div class="event-text">
-                            <h4>Dj Night Party</h4>
+                            <h4>Squier Mini Strat</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">VIP Sala</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">۱۷,۸۵۰,۰۰۰ تومان</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
+                            <a href="#" class="btn see-more-btn">دیدن محصول</a>
                         </div>
                     </div>
                 </div>
@@ -202,15 +250,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="img/bg-img/e5.jpg" alt="">
+                            <img src="img/music-store-img/tempo-darbuka-instrument.webp" alt="">
                         </div>
                         <div class="event-text">
-                            <h4>The Mission</h4>
+                            <h4>Squier Mini Strat</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">Gold Arena</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">۱۷,۸۵۰,۰۰۰ تومان</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
+                            <a href="#" class="btn see-more-btn">دیدن محصول</a>
                         </div>
                     </div>
                 </div>
@@ -219,15 +266,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="img/bg-img/e6.jpg" alt="">
+                            <img src="img/music-store-img/tempo-darbuka-instrument.webp" alt="">
                         </div>
                         <div class="event-text">
-                            <h4>Planet ibiza</h4>
+                            <h4>Squier Mini Strat</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">Space Ibiza</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">۱۷,۸۵۰,۰۰۰ تومان</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
+                            <a href="#" class="btn see-more-btn">دیدن محصول</a>
                         </div>
                     </div>
                 </div>
@@ -236,15 +282,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="img/bg-img/e7.jpg" alt="">
+                            <img src="img/music-store-img/tempo-darbuka-instrument.webp" alt="">
                         </div>
                         <div class="event-text">
-                            <h4>Dj Night Party</h4>
+                            <h4>Squier Mini Strat</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">VIP Sala</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">۱۷,۸۵۰,۰۰۰ تومان</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
+                            <a href="#" class="btn see-more-btn">دیدن محصول</a>
                         </div>
                     </div>
                 </div>
@@ -253,15 +298,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="img/bg-img/e8.jpg" alt="">
+                            <img src="img/music-store-img/tempo-darbuka-instrument.webp" alt="">
                         </div>
                         <div class="event-text">
-                            <h4>The Mission</h4>
+                            <h4>Squier Mini Strat</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">Gold Arena</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">۱۷,۸۵۰,۰۰۰ تومان</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
+                            <a href="#" class="btn see-more-btn">دیدن محصول</a>
                         </div>
                     </div>
                 </div>
@@ -270,15 +314,14 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-event-area mb-30">
                         <div class="event-thumbnail">
-                            <img src="img/bg-img/e9.jpg" alt="">
+                            <img src="img/music-store-img/tempo-darbuka-instrument.webp" alt="">
                         </div>
                         <div class="event-text">
-                            <h4>Planet ibiza</h4>
+                            <h4>Squier Mini Strat</h4>
                             <div class="event-meta-data">
-                                <a href="#" class="event-place">Space Ibiza</a>
-                                <a href="#" class="event-date">June 15, 2018</a>
+                                <a href="#" class="event-place">۱۷,۸۵۰,۰۰۰ تومان</a>
                             </div>
-                            <a href="#" class="btn see-more-btn">See Event</a>
+                            <a href="#" class="btn see-more-btn">دیدن محصول</a>
                         </div>
                     </div>
                 </div>
@@ -288,7 +331,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="load-more-btn text-center mt-70">
-                        <a href="#" class="btn oneMusic-btn">Load More <i class="fa fa-angle-double-right"></i></a>
+                        <a href="#" class="btn oneMusic-btn">بارگذاری کنید <i class="fa fa-angle-double-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -300,18 +343,17 @@
     <section class="newsletter-testimonials-area">
         <div class="container">
             <div class="row">
-
                 <!-- Newsletter Area -->
                 <div class="col-12 col-lg-6">
                     <div class="newsletter-area mb-100">
                         <div class="section-heading text-left mb-50">
-                            <p>See what’s new</p>
-                            <h2>Subscribe to newsletter</h2>
+                            <p>ببینید چه چیزهایی جدید است</p>
+                            <h2>اشتراک در خبرنامه</h2>
                         </div>
                         <div class="newsletter-form">
                             <form action="#">
-                                <input type="search" name="search" id="newsletterSearch" placeholder="E-mail">
-                                <button type="submit" class="btn oneMusic-btn">Subscribe <i class="fa fa-angle-double-right"></i></button>
+                                <input type="search" name="search" id="newsletterSearch" placeholder="ایمیل">
+                                <button type="submit" class="btn oneMusic-btn">اشتراک <i class="fa fa-angle-double-right"></i></button>
                             </form>
                         </div>
                     </div>
@@ -321,29 +363,29 @@
                 <div class="col-12 col-lg-6">
                     <div class="testimonials-area mb-100 bg-img bg-overlay" style="background-image: url(img/bg-img/bg-3.jpg);">
                         <div class="section-heading white text-left mb-50">
-                            <p>See what’s new</p>
-                            <h2>Testimonial</h2>
+                            <p>ببینید چه چیزهایی جدید است</p>
+                            <h2>نظرات</h2>
                         </div>
                         <!-- Testimonial Slide -->
                         <div class="testimonials-slide owl-carousel">
                             <!-- Single Slide -->
                             <div class="single-slide">
-                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus eu dolor eu quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non lacus. Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit, rutrum.</p>
+                                <p>نام تریکستج اکس ول ماگنا تینسیدنت، اوت پورتا نیسل فینیبوس. ویواموس او دولور او کوام واریوس روت‌رام. فوس‌سه نک جاستو آید سم آلیکام فریگیلا نک نون لاکوس. سوسپندیسه ایت لوبورتیس نیسی، اک کورسوس اودیو. ویواموس نیب ولت، روت‌رام.</p>
                                 <div class="testimonial-info d-flex align-items-center">
                                     <div class="testimonial-thumb">
                                         <img src="img/bg-img/t1.jpg" alt="">
                                     </div>
-                                    <p>William Smith, Customer</p>
+                                    <p>ویلیام اسمیت، مشتری</p>
                                 </div>
                             </div>
                             <!-- Single Slide -->
                             <div class="single-slide">
-                                <p>Nam tristique ex vel magna tincidunt, ut porta nisl finibus. Vivamus eu dolor eu quam varius rutrum. Fusce nec justo id sem aliquam fringilla nec non lacus. Suspendisse eget lobortis nisi, ac cursus odio. Vivamus nibh velit, rutrum.</p>
+                                <p>نام تریکستج اکس ول ماگنا تینسیدنت، اوت پورتا نیسل فینیبوس. ویواموس او دولور او کوام واریوس روت‌رام. فوس‌سه نک جاستو آید سم آلیکام فریگیلا نک نون لاکوس. سوسپندیسه ایت لوبورتیس نیسی، اک کورسوس اودیو. ویواموس نیب ولت، روت‌رام.</p>
                                 <div class="testimonial-info d-flex align-items-center">
                                     <div class="testimonial-thumb">
                                         <img src="img/bg-img/t1.jpg" alt="">
                                     </div>
-                                    <p>Nazrul Islam, Developer</p>
+                                    <p>نصرالله اسلام، توسعه‌دهنده</p>
                                 </div>
                             </div>
                         </div>
@@ -361,8 +403,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading white">
-                        <p>See what’s new</p>
-                        <h2>Get In Touch</h2>
+                        <p>ببینید چه چیزهایی جدید است</p>
+                        <h2>با ما در تماس باشید</h2>
                     </div>
                 </div>
             </div>
@@ -375,26 +417,26 @@
                             <div class="row">
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                        <input type="text" class="form-control" id="name" placeholder="نام">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                        <input type="email" class="form-control" id="email" placeholder="ایمیل">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" placeholder="موضوع">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="پیام"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                                    <button class="btn oneMusic-btn mt-30" type="submit">ارسال <i class="fa fa-angle-double-right"></i></button>
                                 </div>
                             </div>
                         </form>
@@ -410,27 +452,34 @@
         <div class="container">
             <div class="row d-flex flex-wrap align-items-center">
                 <div class="col-12 col-md-6">
-                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
-                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    <a href="#"><img src="img/core-img/logo.png" alt="لوگو"></a>
+                    <p class="copywrite-text ">
+                        <a href="# ">
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        Copyright &copy;
+                                        <script>
+                                            document.write(new Date().getFullYear());
+                                        </script> تمامی حقوق محفوظ میباشد
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </a>
+                    </p>
                 </div>
 
                 <div class="col-12 col-md-6">
                     <div class="footer-nav">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Albums</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="index.html ">صفحه اصلی</a></li>
+                            <li><a href="albums-store.html ">آلبوم‌ها</a></li>
+                            <li><a href="blog.html ">اخبار</a></li>
+                            <li><a href="services.html ">خدمات ما</a></li>
+                            <li><a href="contact.html ">تماس با ما</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- ##### Footer Area Start ##### -->
+    <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
