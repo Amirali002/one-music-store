@@ -158,6 +158,7 @@
                                             <li><a href="categoryg.html">گیتار</a></li>
                                             <li><a href="categoryk.html">سازهای کوبه‌ای</a></li>
                                             <li><a href="categoryp.html">پیانو</a></li>
+                                            <li><a href="#">سایر</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="albums-store.html">آلبوم‌ها</a></li>
@@ -252,7 +253,7 @@
 
                         <!-- Single Album -->
                         <div class="single-album">
-                            <img src="img/bg-img/a2.jpg" alt="">
+                            <img src="img/music-store-img/guitar1.jpg" alt="">
                             <div class="album-info">
                                 <a href="#">
                                     <h5>سم اسمیت</h5>
@@ -263,7 +264,7 @@
 
                         <!-- Single Album -->
                         <div class="single-album">
-                            <img src="img/bg-img/a3.jpg" alt="">
+                            <img src="img/music-store-img/guitar1.jpg" alt="">
                             <div class="album-info">
                                 <a href="#">
                                     <h5>ویل آی ام</h5>
@@ -508,17 +509,15 @@
     <script src="js/active.js "></script>
     <!-- Custom Audio Play on Hover -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const products = document.querySelectorAll('.product-image');
-            products.forEach(product => {
-                product.addEventListener('mouseover', function() {
-                    const audio = new Audio('path_to_your_audio_file.mp3');
-                    audio.play();
-                    product.addEventListener('mouseleave', function() {
-                        audio.pause();
-                        audio.currentTime = 0;
-                    });
-                });
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
             });
         });
     </script>

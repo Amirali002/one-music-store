@@ -1008,7 +1008,7 @@ img {
     position: absolute;
     content: '|';
     top: 0;
-    right: 12px;
+    right: -25px;
     z-index: 1;
 }
 
@@ -1281,7 +1281,7 @@ img {
 
 .single-album-area .album-info h5 {
     font-size: 18px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     text-transform: uppercase;
 }
 
